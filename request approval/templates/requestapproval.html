@@ -23,100 +23,7 @@ rel="stylesheet"
 /> 
     <title>Login</title>
       <style>
-         @media (max-width: 768px) {
-         .w-lg-slider{
-         width: 400px; height: 200px ;
-         margin: 0;
-         padding: 0;
-         }
-         .w-lg-login{
-         margin-top: 100px;
-         }
-         .s-xs{
-         height: 600px;
-         }
-         .s-c-xs{
-         height: 300px;
-         }
-         .flex-xs-column{
-         flex-direction: column ;
-         }
-         .d-xs-block{
-         display: block;
-         }
-         .d-xs-none{
-         display: none;
-         }
-         .w-xs{
-         position: relative;
-         width: 100%;
-         height: 200px;
-         }
-         .w-img-xs{
-         width: 100%;
-         height: 100%;
-         }
-         .h-xs-card-container{
-         height: 1500px;
-         justify-content: space-evenly;
-         }
-         }
-         @media (min-width: 768px) {
-         .social-md{
-         height: 700px;
-         justify-content: center;
-         flex-wrap: wrap;
-         }
-         .w-lg-slider{
-         width: 700px; height: 200px ;
-         }
-         .w-lg-login{
-         margin-top: 100px;
-         }
-         .card-md{
-         margin: 30px;
-         }
-         .footer-h-s-md{
-         font-size: large;
-         } 
-         }
-         @media (min-width: 992px) {
-         .w-lg-slider{
-         width: 700px; height: 200px ;
-         }
-         .h-xs-card-container{
-         height: 800px;
-         }
-         .w-lg-login{
-         margin-top: 100px;
-         }
-         }
-         .icons:hover{
-         background-color: rgb(8, 201, 95);
-         border-radius: 10px;
-         }
-         #card1:hover{
-         background-color: rgba(100, 100, 100, 0.97);
-         }
-         @media (min-width: 1200px) {
-         .h-sl-in{
-         margin-top: 20px;
-         width:98vw;height: 600px;background-color: rgba(0, 0, 0, 0.3); border-radius: 30px; background:blur; backdrop-filter: blur(10px);
-         }
-         .w-lg-login{
-         margin-top: 0px;
-         }
-         .w-xl-slider{
-         margin: 50px; margin-right: 0px;
-         width: 700px; height: 200px ;
-         }
-         .h-xl-card-container{
-         height: 700px;
-         }
-         .footer-xl{
-         width: 300px; height: 100%;
-         }
-         }
+          
          .icons:hover{
          background-color: rgb(8, 201, 95);
          border-radius: 10px;
@@ -163,6 +70,16 @@ rel="stylesheet"
         border: 3px solid white
             /* creates padding around scroll thumb */
         }
+        @media (max-width:576px){
+            .d-xs-none{
+                display: none;
+            }
+            .container-sm,.container-sm1{
+                width: 100%;
+                border-radius: none;
+            }
+           
+        }
         @media (min-width:992px){
             .container-sm{
                 width: 990px;
@@ -183,7 +100,7 @@ rel="stylesheet"
             </div>
             </div>
             <div id="nav-elements" class="sm-display-none d-flex align-items-center  justify-content-evenly" style="width: 60%; height: auto;">
-               <a id="pagename" href="#" class="text-white fs-6 d-xs-none  d-md-none d-xl-block d-lg-block  rounded-pill" style="background-color: red; padding-left: 13px; padding-right: 13px; padding-top: 5px; padding-bottom: 5px;">Requests</a>
+               <a id="pagename" href="#" class="text-white fs-6 d-xs-none d-sm-none    d-lg-block  rounded-pill" style="background-color: red; padding-left: 13px; padding-right: 13px; padding-top: 5px; padding-bottom: 5px;">Requests</a>
                <a href="#" class="text-white fs-6 d-md-none d-sm-none d-lg-block d-xl-block d-xs-none rounded-pill"  style=" padding-left: 13px; padding-right: 13px; padding-top: 5px; padding-bottom: 5px;">About us    </a>
                <a href="#" class="text-white fs-6 d-none d-xl-block d-xs-none rounded-pill"  style=" padding-left: 13px; padding-right: 13px; padding-top: 5px; padding-bottom: 5px;">Support us</a>
                <a href="#" class="text-white fs-6 d-none d-xl-block d-xs-none rounded-pill"  style=" padding-left: 13px; padding-right: 13px; padding-top: 5px; padding-bottom: 5px;">Contact</a>
@@ -249,13 +166,13 @@ rel="stylesheet"
          <div id="section " style="width: 100%; height: 88%;color: black;" class="d-flex align-items-center justify-content-evenly">
            
             <div id="" style=" height: 550px; border-radius: 20px;background: rgba(183,183,183,1)" class=" p-4 container-sm">
-                <div id="head"   class="d-flex align-items-center  w-100" style="justify-content: flex-end;">
+                <div id="head"   class="d-flex align-items-center  container-sm1" style="justify-content: flex-end;">
                     
 
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between container-sm1">
                         <div class="d-flex align-items-center" style="margin-right: 30px;">
                             <span style="margin-right: 10px; font-weight: bold;">user:  </span>
-                            <select class="form-select  form-select rounded-pill" aria-label=".form-select-lg example" style="width: 200px;">
+                            <select class="form-select  form-select rounded-pill" aria-label=".form-select-lg example" style="width: 130px;">
                                 <option selected>Shreyans</option>
                                 <option value="1">rajesh</option>
                                 <option value="2">sarthak</option>
@@ -264,7 +181,7 @@ rel="stylesheet"
                         </div>
                         <div class="d-flex align-items-center">
                             <span style="margin-right: 10px;font-weight: bold;">sort:</span>
-                            <select class="form-select form-select rounded-pill" aria-label=".form-select example" style="width: 200px;">
+                            <select class="form-select form-select rounded-pill" aria-label=".form-select example" style="width: 130px;">
                                 <option selected>select menu</option>
                                 <option value="1">Oneaaaaaaaaaaaaaaaaaaaaaa</option>
                                 <option value="2">Two</option>
@@ -276,127 +193,158 @@ rel="stylesheet"
                 <div id="requests-container" class="w-100  mt-4 p-2" style="height:80%; overflow-y: scroll;">
                    
                     
-                    <div class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);"">
-                        <div id="name">
-                            <span>Sachin tendulkar</span>
+                   
+                    <div class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
+                        <div id="name" class="d-flex flex-column">
+                            
+                            <strong id="username" class="">Rajesh</strong>
                         </div>
 
-                        <span>03/04.2022</span>
+                        <div id="date"  style="display:block" ><span>23/04/2022</span></div>
 
-                        <div id="location">
+                        <div id="location" style="display: block;">
                             <span>Fortis Hosp</span>
                         </div>
 
-                        <div id="status">
-                            <span>pending</span>
-                        </div>
-                        <div id="makedecision" class="d-flex flex-column ">
-                            <button class="btn  btn-sm rounded-pill mt-2" style="color: white;width: 100px; background-color: rgba(0, 153, 0, 0.76); font-weight: bold;">ACCEPT</button>
-                            <button class="btn  btn-sm rounded-pill mt-2"  style="color: white;width: 100px; background-color: red; font-weight: bold;">REJECT</button>
-                        </div>
-                        <button
-                        class="btn btn-primary"
-                        type="button"
-                        data-mdb-toggle="collapse"
-                        data-mdb-target="#collapseOne"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        show
-                      </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-mdb-parent="#accordionExample">
-                      <div class="accordion-body d-flex ">
-                        <div id="date-age d-flex flex-row    w-100 bg-primary">
-                            <div id="date" style="margin-right: 30px;">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
-                            </div>
-                            <div id="date">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
-                            </div>
-
-                        </div>
-                        <div id="date-age d-flex flex-row    w-100 bg-primary">
-                            <div id="date" style="margin-right: 30px;">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
-                            </div>
-                            <div id="date">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
-                            </div>
-
-                        </div>
-                        <div id="date-age d-flex flex-row    w-100 bg-primary">
-                            <div id="date" style="margin-right: 30px;">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
-                            </div>
-                            <div id="date">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                        
-                    </div>
-                    <div class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);"">
-                        <div id="name">
-                            <span>Sachin tendulkar</span>
-                        </div>
-
-                        <span>03/04.2022</span>
-
-                        <div id="location">
-                            <span>Fortis Hosp</span>
-                        </div>
-
-                        <div id="status">
-                            <span>pending</span>
-                        </div>
-                        <div id="makedecision" class="d-flex flex-column ">
-                            <button class="btn  btn-sm rounded-pill mt-2" style="color: white;width: 100px; background-color: rgba(0, 153, 0, 0.76); font-weight: bold;">ACCEPT</button>
-                            <button class="btn  btn-sm rounded-pill mt-2"  style="color: white;width: 100px; background-color: red; font-weight: bold;">REJECT</button>
+                        <div id="status" style="display: block;">
+                            <strong>pending</strong>
                         </div>
                         <button
                         id="acc-button"
-                        class="btn btn-primary dropdown-toggle"
+                        class="btn  btn-sm"
                         type="button"
                         data-mdb-toggle="collapse"
                         data-mdb-target="#collapseOne1"
                         aria-expanded="true"
                         aria-controls="collapseOne"
-                        onclick="change()"
+                        onclick="change(this)"
+                        data-h3-toggle="bloodtype"
+                        data-ar-toggle="accept-reject"
+                        data-status-toggle="status"
+                        data-location-toggle="location"
+                        data-namesize-toggle="username"
+                        data-date-toggle="date"
+                        style="position: absolute; top: 10px; box-shadow: none;left: 0;"
+                        title="show more"
                       >
-                        SHOW MORE
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                     </svg>
                       </button>
+                        <div id="makedecision" class="d-flex flex-column ">
+                            <h3 id="bloodtype" style="display: none;">Needs O+ Blood</h3>
+                            <div id="accept-reject" class="d-flex flex-column">
+                                <button class="btn  btn-sm rounded-pill mt-2" style="color: white;width: 100px; background-color: rgba(0, 153, 0, 0.76); font-weight: bold; margin-right: 10px;">ACCEPT</button>
+                            <button class="btn  btn-sm rounded-pill mt-2"  style="color: white;width: 100px; background-color: red; font-weight: bold;">REJECT</button>
+                            </div>
+                        </div>
+                       
                     </h2>
                     <div id="collapseOne1" class="accordion-collapse collapse " aria-labelledby="headingOne" data-mdb-parent="#accordionExample1">
-                      <div class="accordion-body d-flex">
-                        <div id="date-age d-flex flex-row    w-100 bg-primary">
-                            <div id="date" style="margin-right: 30px;">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
+                      <div class="accordion-body" style="width: 600px;">
+                        <div id="date-age " class="d-flex" >
+                            <div id="date" style="margin-right: 50px;">
+                                <strong>Date:</strong><span style="margin-left:30px">03/04/22</span>
                             </div>
-                            <div id="date">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
-                            </div>
-
-                        </div>
-                        <div id="date-age d-flex flex-row    w-100 bg-primary">
-                            <div id="date" style="margin-right: 30px;">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
-                            </div>
-                            <div id="date">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
+                            <div id="age">
+                                <strong>Age:</strong><span style="margin-left:30px">21</span>
                             </div>
 
                         </div>
-                        <div id="date-age d-flex flex-row    w-100 bg-primary">
-                            <div id="date" style="margin-right: 30px;">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
+                        <div id="status-gender " class="d-flex mt-4" >
+                            <div id="status" style="margin-right: 50px;">
+                                <strong>Status:</strong><span style="margin-left:30px">Pending</span>
                             </div>
-                            <div id="date">
-                                <span>Date:</span><span style="margin-left:30px">03/04/22</span>
+                            <div id="age">
+                                <strong>Gender:</strong><span style="margin-left:30px">Male</span>
                             </div>
 
                         </div>
+                        <div id="status-gender " class="d-flex mt-4" >
+                            <div id="locationext">
+                                <strong>Location:</strong><span style="margin-left:30px">Fortis Hospital, Okhla road, New Delhi, Delhi 110025</span>
+                            </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                        
+                    </div>
+                    <div class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
+                        <div id="name1">
+                            <strong id="username1" class="">Sachin tendulkar</strong>
+                        </div>
+
+                        <span id="date1" style="display: block;">03/04.2022</span>
+
+                        <div id="location1" style="display: block;">
+                            <span>Fortis Hosp</span>
+                        </div>
+
+                        <div id="status1" style="display: block;">
+                            <strong>pending</strong>
+                        </div>
+                        <button
+                        id="acc-button1"
+                        class="btn  btn-sm"
+                        type="button"
+                        data-mdb-toggle="collapse"
+                        data-mdb-target="#collapseOne2"
+                        aria-expanded="true"
+                        aria-controls="collapseOne2"
+                        onclick="change(this)"
+                        data-h3-toggle="bloodtype1"
+                        data-ar-toggle="accept-reject1"
+                        data-status-toggle="status1"
+                        data-location-toggle="location1"
+                        data-namesize-toggle="username1"
+                        data-date-toggle="date1"
+                        style="position: absolute; top: 10px; box-shadow: none;left: 0;"
+                        title="show more"
+                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                     </svg>
+                      </button>
+                        <div id="makedecision1" class="d-flex flex-column ">
+                            <h3 id="bloodtype1" style="display: none;">Needs O+ Blood</h3>
+                            <div id="accept-reject1" class="d-flex flex-column">
+                                <button class="btn  btn-sm rounded-pill mt-2" style="color: white;width: 100px; background-color: rgba(0, 153, 0, 0.76); font-weight: bold; margin-right: 10px;">ACCEPT</button>
+                            <button class="btn  btn-sm rounded-pill mt-2"  style="color: white;width: 100px; background-color: red; font-weight: bold;">REJECT</button>
+                            </div>
+                        </div>
+                       
+                    </h2>
+                    <div id="collapseOne2" class="accordion-collapse collapse " aria-labelledby="headingOne" >
+                      <div class="accordion-body" style="width: 600px;">
+                        <div id="date-age " class="d-flex" >
+                            <div id="date" style="margin-right: 50px;">
+                                <strong>Date:</strong><span style="margin-left:30px">03/04/22</span>
+                            </div>
+                            <div id="age">
+                                <strong>Age:</strong><span style="margin-left:30px">21</span>
+                            </div>
+
+                        </div>
+                        <div id="status-gender " class="d-flex mt-4" >
+                            <div id="status" style="margin-right: 50px;">
+                                <strong>Status:</strong><span style="margin-left:30px">Pending</span>
+                            </div>
+                            <div id="age">
+                                <strong>Gender:</strong><span style="margin-left:30px">Male</span>
+                            </div>
+
+                        </div>
+                        <div id="status-gender " class="d-flex mt-4" >
+                            <div id="locationext">
+                                <strong>Location:</strong><span style="margin-left:30px">Fortis Hospital, Okhla road, New Delhi, Delhi 110025</span>
+                            </div>
+
+                        </div>
+                        
+                        
                       </div>
                     </div>
                         
@@ -420,14 +368,68 @@ rel="stylesheet"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
 ></script>
  <script>
-     const change = ()=>{
-        //  if(document.getElementById('acc-button').textContent === "SHOW MORE"){
-        //     document.getElementById('acc-button').textContent = "SHOW LESS"
-        //  }
-        //  if(document.getElementById('acc-button').textContent === "SHOW LESS"){
-        //     document.getElementById('acc-button').textContent = "SHOW MORE"
-        //  }
-        console.log(document.getElementById('acc-button').textContent)
+     const change = (element)=>{
+     
+        if(element.getAttribute("title")=="show more"){
+            element.setAttribute("title","show less")
+       }
+       else{
+        element.setAttribute("title","show more")
+       }
+
+
+
+        var id1 = element.getAttribute("data-h3-toggle");
+        var id2 = element.getAttribute("data-ar-toggle");
+        var id3 = element.getAttribute("data-status-toggle");
+        var id4 = element.getAttribute("data-location-toggle");
+        var id5 = element.getAttribute("data-namesize-toggle");
+        var id6 = element.getAttribute("data-date-toggle");
+        
+      
+
+
+       if( document.getElementById(`${id1}`).style.display == "none"){
+        document.getElementById(`${id1}`).style.display = "block";
+       }
+       else{
+        document.getElementById(`${id1}`).style.display = "none"
+       }
+
+       if( document.getElementById(`${id2}`).className == "d-flex flex-column"){
+        document.getElementById(`${id2}`).className = "d-flex";
+       }
+       else{
+        document.getElementById(`${id2}`).className = "d-flex flex-column"
+       }
+
+       if( document.getElementById(`${id3}`).style.display == "block"){
+        document.getElementById(`${id3}`).style.display = "none";
+       }
+       else{
+        document.getElementById(`${id3}`).style.display = "block"
+       }
+
+       if( document.getElementById(`${id4}`).style.display == "block"){
+        document.getElementById(`${id4}`).style.display = "none";
+       }
+       else{
+        document.getElementById(`${id4}`).style.display = "block"
+       }
+
+       if( document.getElementById(`${id5}`).className == ""){
+        document.getElementById(`${id5}`).className = "fs-3";
+       }
+       else{
+        document.getElementById(`${id5}`).className = ""
+       }
+
+       if( document.getElementById(`${id6}`).style.display == "block"){
+        document.getElementById(`${id6}`).style.display = "none";
+       }
+       else{
+        document.getElementById(`${id6}`).style.display = "block"
+       }
      }
  </script> 
 </html>
