@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+   
     <link rel="shortcut icon" href="../static/logo1.png" type="image/x-icon">
     <!-- Font Awesome -->
 <link
@@ -21,7 +21,7 @@ rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
 rel="stylesheet"
 /> 
-    <title>Login</title>
+    <title>Approve request</title>
       <style>
           
          .icons:hover{
@@ -75,14 +75,23 @@ rel="stylesheet"
                 display: none;
             }
             .container-sm,.container-sm1{
-                width: 100%;
-                border-radius: none;
+                width: 95%;
+                border-radius: 0;
             }
            
         }
         @media (min-width:992px){
             .container-sm{
-                width: 990px;
+                width: 1000px;
+            }
+        }
+        @media (max-width:768px){
+            .mr-100{
+                margin-right: 150px;
+                
+            }
+            .ml-100{
+                margin-left: 100px;
             }
         }
       </style>
@@ -165,7 +174,7 @@ rel="stylesheet"
          </div>
          <div id="section " style="width: 100%; height: 88%;color: black;" class="d-flex align-items-center justify-content-evenly">
            
-            <div id="" style=" height: 550px; border-radius: 20px;background: rgba(183,183,183,1)" class=" p-4 container-sm">
+            <div id="" style=" height: 80%; border-radius: 20px;background: rgba(183,183,183,1)" class=" p-4 container-sm">
                 <div id="head"   class="d-flex align-items-center  container-sm1" style="justify-content: flex-end;">
                     
 
@@ -194,96 +203,19 @@ rel="stylesheet"
                    
                     
                    
-                    <div class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
-                        <div id="name" class="d-flex flex-column">
-                            
-                            <strong id="username" class="">Rajesh</strong>
+                    
+                    <div class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="word-wrap: break-word;position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
+                        <div id="name1" style="margin-right: 30px;">
+                            <strong id="username1" class="mr-100" >Sachin </strong>
                         </div>
 
-                        <div id="date"  style="display:block" ><span>23/04/2022</span></div>
+                        <span id="date1" class="" style="display: block;margin-right: 22px;">03/04.2022</span>
 
-                        <div id="location" style="display: block;">
+                        <div id="location1" class="" style="display: block;">
                             <span>Fortis Hosp</span>
                         </div>
 
-                        <div id="status" style="display: block;">
-                            <strong>pending</strong>
-                        </div>
-                        <button
-                        id="acc-button"
-                        class="btn  btn-sm"
-                        type="button"
-                        data-mdb-toggle="collapse"
-                        data-mdb-target="#collapseOne1"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                        onclick="change(this)"
-                        data-h3-toggle="bloodtype"
-                        data-ar-toggle="accept-reject"
-                        data-status-toggle="status"
-                        data-location-toggle="location"
-                        data-namesize-toggle="username"
-                        data-date-toggle="date"
-                        style="position: absolute; top: 10px; box-shadow: none;left: 0;"
-                        title="show more"
-                      >
-                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                     </svg>
-                      </button>
-                        <div id="makedecision" class="d-flex flex-column ">
-                            <h3 id="bloodtype" style="display: none;">Needs O+ Blood</h3>
-                            <div id="accept-reject" class="d-flex flex-column">
-                                <button class="btn  btn-sm rounded-pill mt-2" style="color: white;width: 100px; background-color: rgba(0, 153, 0, 0.76); font-weight: bold; margin-right: 10px;">ACCEPT</button>
-                            <button class="btn  btn-sm rounded-pill mt-2"  style="color: white;width: 100px; background-color: red; font-weight: bold;">REJECT</button>
-                            </div>
-                        </div>
-                       
-                    </h2>
-                    <div id="collapseOne1" class="accordion-collapse collapse " aria-labelledby="headingOne" data-mdb-parent="#accordionExample1">
-                      <div class="accordion-body" style="width: 600px;">
-                        <div id="date-age " class="d-flex" >
-                            <div id="date" style="margin-right: 50px;">
-                                <strong>Date:</strong><span style="margin-left:30px">03/04/22</span>
-                            </div>
-                            <div id="age">
-                                <strong>Age:</strong><span style="margin-left:30px">21</span>
-                            </div>
-
-                        </div>
-                        <div id="status-gender " class="d-flex mt-4" >
-                            <div id="status" style="margin-right: 50px;">
-                                <strong>Status:</strong><span style="margin-left:30px">Pending</span>
-                            </div>
-                            <div id="age">
-                                <strong>Gender:</strong><span style="margin-left:30px">Male</span>
-                            </div>
-
-                        </div>
-                        <div id="status-gender " class="d-flex mt-4" >
-                            <div id="locationext">
-                                <strong>Location:</strong><span style="margin-left:30px">Fortis Hospital, Okhla road, New Delhi, Delhi 110025</span>
-                            </div>
-
-                        </div>
-                        
-                        
-                      </div>
-                    </div>
-                        
-                    </div>
-                    <div class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
-                        <div id="name1">
-                            <strong id="username1" class="">Sachin tendulkar</strong>
-                        </div>
-
-                        <span id="date1" style="display: block;">03/04.2022</span>
-
-                        <div id="location1" style="display: block;">
-                            <span>Fortis Hosp</span>
-                        </div>
-
-                        <div id="status1" style="display: block;">
+                        <div id="status1" class="" style="display: block;">
                             <strong>pending</strong>
                         </div>
                         <button
@@ -301,14 +233,14 @@ rel="stylesheet"
                         data-location-toggle="location1"
                         data-namesize-toggle="username1"
                         data-date-toggle="date1"
-                        style="position: absolute; top: 10px; box-shadow: none;left: 0;"
+                        style="position: absolute; top: 0px; box-shadow: none;left: 0;"
                         title="show more"
                       >
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                      </svg>
                       </button>
-                        <div id="makedecision1" class="d-flex flex-column ">
+                        <div id="makedecision1" class="d-flex flex-column mb-2">
                             <h3 id="bloodtype1" style="display: none;">Needs O+ Blood</h3>
                             <div id="accept-reject1" class="d-flex flex-column">
                                 <button class="btn  btn-sm rounded-pill mt-2" style="color: white;width: 100px; background-color: rgba(0, 153, 0, 0.76); font-weight: bold; margin-right: 10px;">ACCEPT</button>
@@ -317,8 +249,8 @@ rel="stylesheet"
                         </div>
                        
                     </h2>
-                    <div id="collapseOne2" class="accordion-collapse collapse " aria-labelledby="headingOne" >
-                      <div class="accordion-body" style="width: 600px;">
+                    <div id="collapseOne2" class="accordion-collapse collapse " aria-labelledby="headingOne" style="width: 100%;">
+                      <div class="accordion-body" style="width: 100%">
                         <div id="date-age " class="d-flex" >
                             <div id="date" style="margin-right: 50px;">
                                 <strong>Date:</strong><span style="margin-left:30px">03/04/22</span>
@@ -368,8 +300,10 @@ rel="stylesheet"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
 ></script>
  <script>
+
+     var element1;
      const change = (element)=>{
-     
+        element1 = element
         if(element.getAttribute("title")=="show more"){
             element.setAttribute("title","show less")
        }
@@ -417,11 +351,11 @@ rel="stylesheet"
         document.getElementById(`${id4}`).style.display = "block"
        }
 
-       if( document.getElementById(`${id5}`).className == ""){
+       if( document.getElementById(`${id5}`).className == "mr-100"){
         document.getElementById(`${id5}`).className = "fs-3";
        }
        else{
-        document.getElementById(`${id5}`).className = ""
+        document.getElementById(`${id5}`).className = "mr-100"
        }
 
        if( document.getElementById(`${id6}`).style.display == "block"){
@@ -430,6 +364,10 @@ rel="stylesheet"
        else{
         document.getElementById(`${id6}`).style.display = "block"
        }
+
+       
      }
+
+     
  </script> 
 </html>
