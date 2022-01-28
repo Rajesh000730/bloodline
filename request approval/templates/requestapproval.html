@@ -181,7 +181,7 @@ rel="stylesheet"
                     <div class="d-flex align-items-center justify-content-between container-sm1">
                         <div class="d-flex align-items-center" style="margin-right: 30px;">
                             <span style="margin-right: 10px; font-weight: bold;">user:  </span>
-                            <select class="form-select  form-select rounded-pill" aria-label=".form-select-lg example" style="width: 130px;">
+                            <select onchange="handlechange(this)" class="form-select  form-select rounded-pill" aria-label=".form-select-lg example" style="width: 130px;">
                                 <option selected>Shreyans</option>
                                 <option value="1">rajesh</option>
                                 <option value="2">sarthak</option>
@@ -204,12 +204,12 @@ rel="stylesheet"
                     
                    
                     
-                    <div id="1" class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="word-wrap: break-word;position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
+                    <div id="1" data-name="sachin" data-date="03/04/2022" data-location="Fortis Hosp" class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="word-wrap: break-word;position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
                         <div id="name1" style="margin-right: 30px;">
                             <strong id="username1" class="mr-100" >Sachin </strong>
                         </div>
 
-                        <span id="date1" class="" style="display: block;margin-right: 22px;">03/04.2022</span>
+                        <span id="date1" class="" style="display: block;margin-right: 22px;">03/04/2022</span>
 
                         <div id="location1" class="" style="display: block;">
                             <span>Fortis Hosp</span>
@@ -281,12 +281,12 @@ rel="stylesheet"
                     </div>
                         
                     </div>
-                    <div id="2" class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="word-wrap: break-word;position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
+                    <div id="2" data-name="Rajesh" data-date="03/04/2022" data-location="Fortis Hosp" class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="word-wrap: break-word;position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
                         <div id="name1" style="margin-right: 30px;">
                             <strong id="username2" class="mr-100" >Rajesh </strong>
                         </div>
 
-                        <span id="date2" class="" style="display: block;margin-right: 22px;">03/04.2022</span>
+                        <span id="date2" class="" style="display: block;margin-right: 22px;">03/04/2022</span>
 
                         <div id="location2" class="" style="display: block;">
                             <span>Fortis Hosp</span>
@@ -377,10 +377,33 @@ rel="stylesheet"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
 ></script>
  <script>
-    var items  =  document.getElementById('requests-container').children;
-    // items[0].id="2";
-    // document.getElementById('requests-container').replaceChildren(items[0])
-    console
+      var items  =  document.getElementById('requests-container').children;
+      items[0] = items[1]
+      console.log(typeof(items))
+     const handlechange = (data)=>{
+         var selected = data.options.selectedIndex
+       console.log(data[selected].textContent);
+    //    filter();
+
+     }
+   
+    // items.filter(data=>)
+    // items.filter(dat=>(dat.getAttribute('data-name')="sachin"))
+    //  function filter(){
+    //     var item = new Array;
+    //     for(var i = 0; i<items.length;i++){
+    //      item.push(items[i])
+    //     }
+     
+    //      var x = item.filter(ele=>ele.dataset.name=="Rajesh")
+
+    //      for(var j = 0; j < items.length; j++){
+    //          items[j] = x[0]
+    //          console.log(items)
+    //      }
+         
+    //  }
+     
      var element1;
      const change = (element)=>{
         element1 = element
