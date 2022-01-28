@@ -204,7 +204,7 @@ rel="stylesheet"
                     
                    
                     
-                    <div class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="word-wrap: break-word;position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
+                    <div id="1" class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="word-wrap: break-word;position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
                         <div id="name1" style="margin-right: 30px;">
                             <strong id="username1" class="mr-100" >Sachin </strong>
                         </div>
@@ -281,6 +281,83 @@ rel="stylesheet"
                     </div>
                         
                     </div>
+                    <div id="2" class=" w-100  bg-light  d-flex flex-wrap align-items-center justify-content-between p-4" style="word-wrap: break-word;position: relative;border-radius: 15px;margin-top: 20px;box-shadow: -12px 14px 9px -9px rgba(0,0,0,0.75);">
+                        <div id="name1" style="margin-right: 30px;">
+                            <strong id="username2" class="mr-100" >Rajesh </strong>
+                        </div>
+
+                        <span id="date2" class="" style="display: block;margin-right: 22px;">03/04.2022</span>
+
+                        <div id="location2" class="" style="display: block;">
+                            <span>Fortis Hosp</span>
+                        </div>
+
+                        <div id="status2" class="" style="display: block;">
+                            <strong>pending</strong>
+                        </div>
+                        <button
+                        id="acc-button1"
+                        class="btn  btn-sm"
+                        type="button"
+                        data-mdb-toggle="collapse"
+                        data-mdb-target="#collapseOne3"
+                        aria-expanded="true"
+                        aria-controls="collapseOne2"
+                        onclick="change(this)"
+                        data-h3-toggle="bloodtype2"
+                        data-ar-toggle="accept-reject2"
+                        data-status-toggle="status2"
+                        data-location-toggle="location2"
+                        data-namesize-toggle="username2"
+                        data-date-toggle="date2"
+                        style="position: absolute; top: 0px; box-shadow: none;left: 0;"
+                        title="show more"
+                      >
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                     </svg>
+                      </button>
+                        <div id="makedecision1" class="d-flex flex-column mb-2">
+                            <h3 id="bloodtype2" style="display: none;">Needs O+ Blood</h3>
+                            <div id="accept-reject2" class="d-flex flex-column">
+                                <button class="btn  btn-sm rounded-pill mt-2" style="color: white;width: 100px; background-color: rgba(0, 153, 0, 0.76); font-weight: bold; margin-right: 10px;">ACCEPT</button>
+                            <button class="btn  btn-sm rounded-pill mt-2"  style="color: white;width: 100px; background-color: red; font-weight: bold;">REJECT</button>
+                            </div>
+                        </div>
+                       
+                    </h2>
+                    <div id="collapseOne3" class="accordion-collapse collapse " aria-labelledby="headingOne" style="width: 100%;">
+                      <div class="accordion-body" style="width: 100%">
+                        <div id="date-age " class="d-flex" >
+                            <div id="date" style="margin-right: 50px;">
+                                <strong>Date:</strong><span style="margin-left:30px">03/04/22</span>
+                            </div>
+                            <div id="age">
+                                <strong>Age:</strong><span style="margin-left:30px">21</span>
+                            </div>
+
+                        </div>
+                        <div id="status-gender " class="d-flex mt-4" >
+                            <div id="status" style="margin-right: 50px;">
+                                <strong>Status:</strong><span style="margin-left:30px">Pending</span>
+                            </div>
+                            <div id="age">
+                                <strong>Gender:</strong><span style="margin-left:30px">Male</span>
+                            </div>
+
+                        </div>
+                        <div id="status-gender " class="d-flex mt-4" >
+                            <div id="locationext">
+                                <strong>Location:</strong><span style="margin-left:30px">Fortis Hospital, Okhla road, New Delhi, Delhi 110025</span>
+                            </div>
+
+                        </div>
+                        
+                        
+                      </div>
+                    </div>
+                        
+                    </div>
                     
                      
                     
@@ -300,7 +377,10 @@ rel="stylesheet"
   src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
 ></script>
  <script>
-
+    var items  =  document.getElementById('requests-container').children;
+    // items[0].id="2";
+    // document.getElementById('requests-container').replaceChildren(items[0])
+    console
      var element1;
      const change = (element)=>{
         element1 = element
